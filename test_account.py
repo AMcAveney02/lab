@@ -2,10 +2,10 @@ import pytest
 from account import *
 
 class Test:
-    def setUp(self):
+    def setup_method(self):
         self.first_account = Account("001 - Henry Cavill")
 
-    def tearDown(self):
+    def teardown_method(self):
         del self.first_account
 
     def test_init(self):
